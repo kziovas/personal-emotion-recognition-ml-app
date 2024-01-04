@@ -30,6 +30,7 @@
             {% csrf_token %}
             
           <div class="input-group">
+            <label for="{{ form.image.id_for_label }}"></label>
               {{ form.image }}
               <input type="submit" value="Analyse Image" class="btn btn-outline-secondary">
           </div>
