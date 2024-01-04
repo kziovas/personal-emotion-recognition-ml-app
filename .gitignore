@@ -1,15 +1,9 @@
 # Ignore all image files in emotion_recognition/media/images directory
-emotion_recognition/media/images/*.png
-emotion_recognition/media/images/*.jpg
-emotion_recognition/media/images/*.jpeg
-emotion_recognition/media/images/*.gif
+emotion_recognition/media/images/*
 
 
 # Ignore all image files in emotion_recognition/media/ml_output directory
-emotion_recognition/media/ml_output/*.png
-emotion_recognition/media/ml_output/*.jpg
-emotion_recognition/media/ml_output/*.jpeg
-emotion_recognition/media/ml_output/*.gif
+emotion_recognition/media/ml_output/*
 
 # Ignore the file named superuser_info
 superuser_info
