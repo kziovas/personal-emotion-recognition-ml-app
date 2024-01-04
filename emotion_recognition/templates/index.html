@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinAisthisis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-dark" style="background-color: #B36B00;">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+            <img src="{% static 'plus-aisthisis-logo.png' %}" alt="" width="160" height="40">
+            </a>
+        </div>
+    </nav>
+    <!-- body -->
+    <div class="container">
+        <br>
+        <h3 class="display-11" align="center" style="color: #B36B00;">Emotion Recognition</h3>
+        <br>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            {% csrf_token %}
+            
+          <div class="input-group">
+              {{ form.image }}
+              <input type="submit" value="Analyse Image" class="btn btn-outline-secondary">
+          </div>
+          
+          
+            
+        </form>
+
+
+        {% if upload %}
+        <br><br>
+
+        <div class="row">
+            <div class="col">
+            
+                <img class="img-fluid" src="/media/ml_output/analysed.jpg" alt="">
+            </div>
+
+
+            {% endif %}
+
+            </div>
+        </div>
+       
+        <hr>
+        <div class="container">
+            <footer>
+              SinAisthisis developed by: <a href="https://kostasziovas.net/">Kostas Ziovas</a>
+            </footer>
+
+        </div>
+    
+    
+</body>
+</html>
