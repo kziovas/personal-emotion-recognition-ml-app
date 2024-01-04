@@ -13,3 +13,9 @@ emotion_recognition/media/ml_output/*.gif
 
 # Ignore the file named superuser_info
 superuser_info
+
+# Ignore Python compiled files
+*.pyc
+
+# Ignore temporary Visual Studio Code files
+.vscode/
