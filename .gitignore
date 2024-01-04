@@ -13,3 +13,6 @@ superuser_info
 
 # Ignore temporary Visual Studio Code files
 .vscode/
+
+# Ignore db changes
+db.sqlite3
