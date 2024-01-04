@@ -1,4 +1,4 @@
-from app.models import EmotionRecognitionition
+from app.models import EmotionRecognition
 from django import forms
 
 

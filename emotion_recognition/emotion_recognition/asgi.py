@@ -1,5 +1,5 @@
 """
-ASGI config for emotionrecognition project.
+ASGI config for emotion_recognition project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emotionrecognition.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emotion_recognition.settings")
 
 application = get_asgi_application()

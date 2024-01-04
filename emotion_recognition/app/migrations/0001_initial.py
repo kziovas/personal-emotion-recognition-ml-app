@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="emotionrecognition",
+            name="EmotionRecognition",
             fields=[
                 ("id", models.AutoField(primary_key=True, serialize=False)),
                 ("record_date", models.DateTimeField(auto_now_add=True)),

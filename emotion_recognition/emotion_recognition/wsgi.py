@@ -1,5 +1,5 @@
 """
-WSGI config for emotionrecognition project.
+WSGI config for emotion_recognition project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emotionrecognition.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "emotion_recognition.settings")
 
 application = get_wsgi_application()
